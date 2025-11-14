@@ -41,7 +41,7 @@ class CardWindow < Gosu::Window
     @font.draw_text(stats, x+10, y+180, 1, 1, 1, Gosu::Color::BLACK)
     
     # Quote
-    @font.draw_text(quote, x+10, y+220, 1, 1, 1, Gosu::Color.new(0xff666666))
+    @font.draw_text(quote, x+10, y+220, 1, 1, 1, Gosu::Color.new(0xff_000000))
   end
   
   def draw_rect(x, y, width, height, color)
