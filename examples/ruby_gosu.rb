@@ -1,14 +1,10 @@
 require 'gosu'
 
-  $breedte = 850
-  $hoogte = 500
-  
+  $breedte = Gosu.screen_width;
+  $hoogte = Gosu.screen_height;
+
 class CardWindow < Gosu::Window
-
   def initialize
-
-    
-
     super($breedte, $hoogte, fullscreen: true)
     self.caption = "Ruby Card Demo - Bart & Safa"
     @font = Gosu::Font.new(18)
@@ -22,12 +18,15 @@ class CardWindow < Gosu::Window
   def draw
     draw_rect(0, 0, $breedte, $hoogte, Gosu::Color::WHITE)
     
-    draw_card(150, 50, "[1] Bart", "( o_o )", "<\\|/>", "/   \\", "HP: #{@bart_hp}  POW: 10", "\"Let's code!\"")
+    card_y = $hoogte / 4
+    bart_x = ($breedte / 2) - 250
+    safa_x = ($breedte / 2) + 50
     
-    draw_card(500, 50, "[2] Safa", "( ^_^ )", "<\\|/>", "/   \\", "HP: #{@safa_hp}  POW: 12", "\"Game on!\"")
+    draw_card(bart_x, card_y, "[1] Bart", "( o_o )", "<\\|/>", "/   \\", "HP: #{@bart_hp}  POW: 10", "\"Let's code!\"")
     
-    # knop
-    button_x, button_y = 325, 370
+    draw_card(safa_x, card_y, "[2] Safa", "( ^_^ )", "<\\|/>", "/   \\", "HP: #{@safa_hp}  POW: 12", "\"Game on!\"")
+    
+    button_x, button_y = ($breedte / 2) - 100, ($hoogte * 3 / 4)
     button_color = Gosu::Color.new(0xff_4CAF50)
     draw_rect(button_x, button_y, 200, 50, button_color)
     draw_rect(button_x+2, button_y+2, 196, 46, Gosu::Color.new(0xff_66BB6A))
@@ -36,14 +35,14 @@ class CardWindow < Gosu::Window
     @title_font.draw_text("ATTACK!", button_x+50, button_y+13, 1, 1, 1, Gosu::Color::WHITE)
     
     if @bart_hp <= 0
-      @title_font.draw_text("safa win", 385, 250, 1, 1, 1, Gosu::Color::RED)
+      @title_font.draw_text("SAFA WINT!", ($breedte / 2) - 80, $hoogte / 2, 1, 1, 1, Gosu::Color::RED)
     elsif @safa_hp <= 0
-      @title_font.draw_text("bart win", 385, 250, 1, 1, 1, Gosu::Color::RED)
+      @title_font.draw_text("BART WINT!", ($breedte / 2) - 80, $hoogte / 2, 1, 1, 1, Gosu::Color::RED)
     else
-      @font.draw_text("#{attacker_name} beurt druk voor attack", 320, 450, 1, 1, 1, Gosu::Color::BLACK)
+      @font.draw_text("#{attacker_name} beurt druk ATTACK", ($breedte / 2) - 120, $hoogte - 80, 1, 1, 1, Gosu::Color::BLACK)
     end
     
-    @font.draw_text("Druk ESC om te sluiten", 330, 470, 1, 1, 1, Gosu::Color::BLACK)
+    @font.draw_text("Druk ESC om te sluiten", ($breedte / 2) - 100, $hoogte - 50, 1, 1, 1, Gosu::Color::BLACK)
   end
   
   def draw_card(x, y, name, face, body, legs, stats, quote)
@@ -74,8 +73,10 @@ class CardWindow < Gosu::Window
     if id == Gosu::MS_LEFT
       x, y = mouse_x, mouse_y
       
-      # Check druk
-      if x >= 325 && x <= 525 && y >= 370 && y <= 420
+      button_x = ($breedte / 2) - 100
+      button_y = ($hoogte * 3 / 4)
+      
+      if x >= button_x && x <= button_x + 200 && y >= button_y && y <= button_y + 50
         attack
       end
     end
