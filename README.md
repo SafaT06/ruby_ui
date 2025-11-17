@@ -25,14 +25,12 @@ https://mcorino.github.io/wxRuby3/
 ### Ruby UI (doet het ook niet) REJECTED
 - cd ruby_ui en dan bundle add ruby_ui --group development --require false
 - rails g ruby_ui:install
-- gem install phlex
-
 
 
 | Criteria         | Gosu                                       | Glimmer                                  | WxRuby3                                   |
 | ------------------ | -------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
 | **Documentatie** | + Uitgebreide docs, wiki, veel voorbeelden | + Goede docs                             | + Grote community                         |
 | **Leercurve**    | + Simpel API, snel te leren                | Mwah ???                                 | - Complex API, veel classes               |
-| **Visualisatie** | + Custom graphics, pixel-perfect.          | - Beperkte custom drawing (geen kleuren) | + Native ingebouwde widgets (buttons etc) |
+| **Visualisatie** | + Custom graphics, pixel-perfect (je kan zelf de pixels vertellen).          | - Beperkte custom drawing (geen kleuren) | + Native ingebouwde widgets (buttons etc) |
 
-**Conclusie**: Gosu gekozen voor volledige visuele controle en simpele API. EN EN voor games gemaakt dus win win situatie
+**Conclusie**: Gosu gekozen voor visuele controle en simpele API. EN EN voor games gemaakt dus win win situatie
