@@ -1,6 +1,9 @@
 - gem install bundler (in terminal)
 - bundle gem ruby_ui
 
+- bundle install
+---
+
 ### Gosu (deze)
 - gem install gosu (voor gui?? mag dit??? is een 2d game development library) (WINDOWS)
 - gem install gosu -- user -install (MAC OS)
