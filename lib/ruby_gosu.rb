@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/AbcSize, Metrics/ParameterLists, Metrics/MethodLength
+
 require 'gosu'
 
 # CardWindow class for the Ruby Card Demo
@@ -18,7 +20,7 @@ class CardWindow < Gosu::Window
     @turn = :bart
   end
 
-  def draw # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+  def draw
     draw_rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, Gosu::Color::WHITE)
 
     card_y = SCREEN_HEIGHT / 4
@@ -49,7 +51,7 @@ class CardWindow < Gosu::Window
     @font.draw_text('Druk ESC om te sluiten', (SCREEN_WIDTH / 2) - 100, SCREEN_HEIGHT - 50, 1, 1, 1, Gosu::Color::BLACK)
   end
 
-  def draw_card(x_pos, y_pos, name, face, body, legs, stats, quote) # rubocop:disable Metrics/AbcSize, Metrics/ParameterLists
+  def draw_card(x_pos, y_pos, name, face, body, legs, stats, quote)
     draw_rect(x_pos, y_pos, 200, 300, Gosu::Color::BLACK)
     draw_rect(x_pos + 3, y_pos + 3, 194, 294, Gosu::Color::WHITE)
 
