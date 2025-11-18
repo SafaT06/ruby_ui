@@ -27,6 +27,8 @@ https://mcorino.github.io/wxRuby3/
 - rails g ruby_ui:install
 
 
+Doe even voor de zekerheid
+
 | Criteria         | Gosu                                       | Glimmer                                  | WxRuby3                                   |
 | ------------------ | -------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
 | **Documentatie** | + Uitgebreide docs, wiki, veel voorbeelden | + Goede docs                             | + Grote community                         |
@@ -34,3 +36,4 @@ https://mcorino.github.io/wxRuby3/
 | **Visualisatie** | + Custom graphics, pixel-perfect (je kan zelf de pixels vertellen).          | - Beperkte custom drawing (geen kleuren) | + Native ingebouwde widgets (buttons etc) |
 
 **Conclusie**: Gosu gekozen voor visuele controle en simpele API. EN EN voor games gemaakt dus win win situatie
+
