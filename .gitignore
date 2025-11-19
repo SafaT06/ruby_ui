@@ -6,3 +6,11 @@
 /pkg/
 /spec/reports/
 /tmp/
+.idea/copilot.data.migration.agent.xml
+.idea/copilot.data.migration.ask.xml
+.idea/copilot.data.migration.ask2agent.xml
+.idea/copilot.data.migration.edit.xml
+.idea/misc.xml
+.idea/ruby_ui.iml
+.idea/ruby_ui.iml
+.idea/misc.xml
