@@ -1,5 +1,9 @@
-- gem install bundler (in terminal)
+- gem install bundler (in vscode terminal)
 - bundle gem ruby_ui
+
+^Voor een nieuwe project^
+
+Doe in cd ruby_ui
 
 - bundle install
 
