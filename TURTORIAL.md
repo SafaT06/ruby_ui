@@ -16,6 +16,15 @@ Volg deze stappen om een nieuw Ruby + Gosu project op te zetten.
    brew install sdl2 sdl2_image sdl2_mixer sdl2_ttf
 ```
 
+**Windows:**
+Ga naar de [RubyInstaller](https://rubyinstaller.org) website.
+Download de laatste versie van Ruby + Devkit.
+Controleer de installatie in een terminal met:
+```bash
+ruby -v
+```
+
+
 3. Installeer bundler
 Open een terminal in de folder waar je je project wilt hebben (bijv. ruby_ui) en voer uit:
 
