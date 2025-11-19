@@ -2,14 +2,16 @@
 - bundle gem ruby_ui
 
 - bundle install
+
+download deze vs code extension
+https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop
+
 ---
 
 ### Gosu (deze)
 - gem install gosu (voor gui?? mag dit??? is een 2d game development library) (WINDOWS)
 - gem install gosu -- user -install (MAC OS)
 https://www.rubydoc.info/gems/gosu/Gosu
-
-
 
 
 **RuboCop** is a Ruby static code analyzer (a.k.a. `linter`) and code formatter. Out of the box it
@@ -51,35 +53,9 @@ See [our versioning policy](https://docs.rubocop.org/rubocop/versioning.html) fo
 
 Just type `rubocop` in a Ruby project's folder and watch the magic happen.
 
-```sh
-cd my/cool/ruby/project
-rubocop
-```
-
-> [!TIP]
->
-> You can also use this magic in your favorite editor with RuboCop's
-> [built-in LSP server](https://docs.rubocop.org/rubocop/usage/lsp.html).
-
 ## Documentation
 
 You can read a lot more about RuboCop in its [official docs](https://docs.rubocop.org).
-
-## Readme Badge
-
-If you use RuboCop in your project, you can include one of these badges in your readme to let people know that your code is written following the community Ruby Style Guide.
-
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
-
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
-
-Here are the Markdown snippets for the two badges:
-
-``` markdown
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
-
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
-```
 
 ### Bronnen
 

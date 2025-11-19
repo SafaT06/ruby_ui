@@ -103,3 +103,5 @@ end
 
 window = CardWindow.new
 window.show
+
+# rubocop:enable Metrics/AbcSize, Metrics/ParameterLists, Metrics/MethodLength
