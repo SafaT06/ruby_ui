@@ -1,5 +1,5 @@
 - gem install bundler (in vscode terminal)
-- bundle gem ruby_ui
+- bundle gem <project naam>
 
 ^Voor een nieuwe project^
 
@@ -14,6 +14,10 @@ https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop
 
 ### Gosu (deze)
 - gem install gosu (voor gui?? mag dit??? is een 2d game development library) (WINDOWS)
+
+
+
+- brew install gosu
 - gem install gosu -- user -install (MAC OS)
 https://www.rubydoc.info/gems/gosu/Gosu
 

@@ -1,5 +1,4 @@
 # Ruby UI
-
 Small prototype to show that a simple text based UI is possible in ruby
 
 ## Korte uitleg ruby (GOSU, GLIMMER, RUBYFX, RUBYUI, WXRUBY3)
